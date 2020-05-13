@@ -9,19 +9,22 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # Specify message files
-#add_message_files(
-#  FILES
-#  MyCustomMessage.msg
-#  )
+add_message_files(
+  FILES
+  ColorRGB.msg
+  LedModulePixel.msg
+  LedModuleSegment.msg
+  #MyCustomMessage.msg
+)
 
 # Generate message files
-#generate_messages(
-#  DEPENDENCIES
-#  std_msgs
-#)
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 
 catkin_package(
   CATKIN_DEPENDS
-    message_runtime
+  message_runtime
 )
