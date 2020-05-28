@@ -9,17 +9,16 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # Specify message files
-#add_message_files(
-#  FILES
-#  MyCustomMessage.msg
-#  )
+add_message_files(
+  FILES
+  PowerSupply.msg
+)
 
 # Generate message files
-#generate_messages(
-#  DEPENDENCIES
-#  std_msgs
-#)
-
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 catkin_package(
   CATKIN_DEPENDS
