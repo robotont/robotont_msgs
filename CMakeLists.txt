@@ -14,7 +14,7 @@ add_message_files(
   ColorRGB.msg
   LedModulePixel.msg
   LedModuleSegment.msg
-  #MyCustomMessage.msg
+  PowerSupply.msg
 )
 
 # Generate message files
