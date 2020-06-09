@@ -15,6 +15,7 @@ add_message_files(
   LedModulePixel.msg
   LedModuleSegment.msg
   PowerSupply.msg
+  LaserScanSplit.msg
 )
 
 # Generate message files
