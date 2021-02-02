@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>robotont_msgs</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>The robotont_msgs package</description>
 
   <author email="veix123@gmail.com">Veiko Vunder</author>
