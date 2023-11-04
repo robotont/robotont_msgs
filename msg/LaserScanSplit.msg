@@ -1,13 +1,12 @@
+# This msg defines a message for dividing laserscan into 3 separate distances
+# It provides mean and minimum values for the three sectors.
 
-#This msg defines a message for dividing laserscan into 3 separate distances
-#It provides mean and minimum values for the three sectors.
+builtin_interfaces/Time stamp
 
-time stamp
+float64 left_min
+float64 center_min
+float64 right_min
 
-float64 leftMin
-float64 centerMin
-float64 rightMin
-
-float64 leftMean
-float64 centerMean
-float64 rightMean
+float64 left_mean
+float64 center_mean
+float64 right_mean

@@ -1,31 +1,27 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(robotont_msgs)
 
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  std_msgs
-  message_generation
-)
+# Find packages in ROS 2
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 # Specify message files
-add_message_files(
-  FILES
-  ColorRGB.msg
-  LedModulePixel.msg
-  LedModuleSegment.msg
-  PowerSupply.msg
-  LaserScanSplit.msg
+set(msg_files
+  "msg/ColorRGB.msg"
+  "msg/LedModulePixel.msg"
+  "msg/LedModuleSegment.msg"
+  "msg/PowerSupply.msg"
+  "msg/LaserScanSplit.msg"
 )
 
 # Generate message files
-generate_messages(
-  DEPENDENCIES
-  std_msgs
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES std_msgs
 )
 
+# Create the package
+ament_export_dependencies(rosidl_default_runtime)
 
-catkin_package(
-  CATKIN_DEPENDS
-  message_runtime
-)
+ament_package()
