@@ -11,6 +11,7 @@ set(msg_files
   "msg/ColorRGB.msg"
   "msg/LedModulePixel.msg"
   "msg/LedModuleSegment.msg"
+  "msg/LedModuleMode.msg"
   "msg/PowerSupply.msg"
   "msg/LaserScanSplit.msg"
 )
